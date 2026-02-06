@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: var(--font-space-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@utility brut-border {
+  @apply border border-black;
+}
+
+@utility brut-btn {
+  @apply border border-black bg-black text-white px-6 py-3 font-bold hover:bg-white hover:text-black transition-colors duration-200;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 2px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
